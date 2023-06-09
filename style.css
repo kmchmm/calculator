@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.calc-container{
+    background-color: #000;
+    min-height: 50px;
+    max-width: 100%;
+    width: 13%;
+    height: auto;
+    margin: 0 auto;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.calc-container input{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 26.001px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 23%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5em;
+    cursor: pointer;
+    border: none;
+}
+.display{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.display input{
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    background-color: #000000;
+    color: #fff;
+    margin-bottom: .1em;
+    margin-top: 1em;
+    cursor: pointer;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-align: right;
+    flex: 1;
+    border: none;
+    border-radius: 0;
+}
+.list1 input{
+    color: rgb(51, 51, 51);
+    background-color: #a0a0a0;
+}
+.list1 input:last-child,.list2 input:last-child,.list3 input:last-child, .list4 input:last-child,.list5 input:last-child{
+    background-color: #f69906;
+    color: #fff;
+}
+
+.list2 input,.list3 input,.list4 input,.list5 input{
+    background-color: #313131;
+    color: #fff;
+}
+.list5 input:first-child{
+    width: 47%;
+    border-radius: 40px;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+
+
+@media screen and (max-width:1440px){
+    .calc-container{
+        width: 20%;
+    }
+    .calc-container ul li{
+        width: 23%;
+
+    }
+}
+
+@media screen and (max-width:1023px){
+    .calc-container{
+        width: 25%;
+    }
+    .calc-container ul li{
+        width: 23%;
+
+    }
+}
+@media screen and (max-width:769px){
+    .calc-container{
+        width: 35%;
+    }
+    .calc-container ul li{
+        width: 23%;
+
+    }
+}
+
+@media screen and (max-width:480px){
+    .calc-container{
+        width: 55%;
+    }
+    .calc-container ul li{
+        width: 23%;
+
+    }
+}
